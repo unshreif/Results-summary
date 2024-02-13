@@ -22,12 +22,12 @@
             box-sizing: border-box;
         }
         .m1 {
-            background-color: hsl(240, 83.83%, 53.92%);
             border-radius: 8%;
             width: 340px;
             height: 490px;
             padding: 20px;
             box-sizing: border-box;
+            background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
         }
         .m2{
             White: hsl(0, 0%, 100%);
@@ -40,7 +40,6 @@
             border-radius: 50%;
             display: table;
         display: block;
-        background-color: white;
         padding:20px;
         border-radius: 20px;
         position: relative;
@@ -52,7 +51,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: hsl(234, 85%, 45%);
+            background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
             color: white;
             font-size: 50px;
             font-family: HankenGrotesk-Bold, sans-serif;
@@ -207,19 +206,6 @@ margin-left: 1px;
             height: 10%;
             padding-right: 80px;
         }
-        .p10{
-            margin: auto;
-            padding-inline-start: 1%;
-            line-height: normal;
-            color: black;
-            font-size: 16px;
-            font-weight: 400;
-            font-style: normal;
-            font-family: "HankenGrotesk-Variable";
-            text-align: left;
-            margin-left: 1px;
-            padding-left: 130px;
-        }
         .p11{
             margin: auto;
             padding-inline-start: 1%;
@@ -233,19 +219,7 @@ margin-left: 1px;
             margin-left: 1px;
             padding-left: 130px;  padding-left:4px;
             font-family:  HankenGrotesk-Medium;
-        }  
-        .p12{
-            margin: auto;
-            padding-inline-start: 1%;
-            line-height: normal;
-            color: black;
-            font-size: 16px;
-            font-weight: 400;
-            font-style: normal;
-            font-family: "HankenGrotesk-Variable";
-            text-align: left;
-            margin-left: 1px;
-            padding-left: 130px;  
+            padding-left: 140px;
         }  
         .p13{
             margin: auto;
@@ -260,19 +234,7 @@ margin-left: 1px;
             margin-left: 1px;
             padding-left: 140px;  padding-left:4px;
             font-family:  HankenGrotesk-Medium;
-        }
-        .p14{
-            margin: auto;
-            padding-inline-start: 1%;
-            line-height: normal;
-            color: black;
-            font-size: 16px;
-            font-weight: 400;
-            font-style: normal;
-            font-family: "HankenGrotesk-Variable";
-            text-align: left;
-            margin-left: 1px;
-            padding-left: 130px;  
+            padding-left: 140px;
         }
         .p15{
             margin: auto;
@@ -287,19 +249,7 @@ margin-left: 1px;
             margin-left: 1px;
             padding-left: 130px;  padding-left:15px;
             font-family:  HankenGrotesk-Medium;
-        }
-        .p16{
-            margin: auto;
-            padding-inline-start: 1%;
-            line-height: normal;
-            color: black;
-            font-size: 16px;
-            font-weight: 400;
-            font-style: normal;
-            font-family: "HankenGrotesk-Variable";
-            text-align: left;
-            margin-left: 1px;
-            padding-left: 130px; 
+            padding-left: 150px;
         }
         .p17{
             margin: auto;
@@ -314,6 +264,7 @@ margin-left: 1px;
             margin-left: 2px;
             padding-left: 130px;  padding-left:15px;
             font-family:  HankenGrotesk-Medium;
+            padding-left: 150px;
         }
         button{
             width: 290px;
@@ -326,36 +277,36 @@ margin-left: 1px;
             font-family:HankenGrotesk-Variable ;
         }
         button:hover{
-            background-color: hsl(252, 100%, 67%);
+            background-color:hsl(252, 100%, 67%);
         }
 </style>
 </head>
 <body>
     <main class="m1">
         <center>
-        <h3 style="color:hsl(241, 100%, 89%);font-family:HankenGrotesk-Variable ;">Your Result</h3>
+        <p style="color:hsl(241, 100%, 89%);font-family:HankenGrotesk-Variable ;font-size: 110%;"><b>Your Result</b></p>
         <main class="h1">
-            <h1>76</h1>&nbsp;
+            <p style="font-size: 120px";>76</p>&nbsp;
             <p class="p2">of 100</p>
         </main>
-        <h2 style="color: white;font-family: HankenGrotesk-ExtraBold;font-size: 30px;">Great</h2>
+        <p style="color: white;font-family: HankenGrotesk-ExtraBold;font-size: 30px;">Great</p>
         <p style="font-family: HankenGrotesk-Medium;color: white;line-height: 140%;">you scored higher than 65% of the people who have taken these tests</p>
         </center>
     </main>
     <main class="m2" >
-            <h3 style="text-align: left;font-family: HankenGrotesk-Variable;font-size: 24px;">Summary</h3>
+            <p style="text-align: left;font-family: HankenGrotesk-Variable;font-size: 24px;"><b>Summary</b></p>
             <br>
-           <main class="m3">
-                <img class="i2" src="icon-reaction.svg" alt="icon-reaction"><p class="p0">reaction</p><p class="p10">80</p><p class="p11">/100</p>
+            <main class="m3">
+                <img class="i2" src="icon-reaction.svg" alt="icon-reaction"><p class="p0">reaction</p><p class="p11"><b>80</b>/100</p>
             </main>
 <br>
-                <main class="m4" ><img class="i3" src="icon-memory.svg" alt="icon-memory"><p class="p6">Memory</p><p class="p12">92</p><p class="p13">/100</p>
+                <main class="m4" ><img class="i3" src="icon-memory.svg" alt="icon-memory"><p class="p6">Memory</p><p class="p13"><b>92</b>/100</p>
             </main>
               <br>
-            <main class="m5" ><img class="i4" src="icon-verbal.svg" alt="icon-memory"><p class="p7">Verbal</p><p class="p14">61</p><p class="p15">/100</p>
+            <main class="m5" ><img class="i4" src="icon-verbal.svg" alt="icon-memory"><p class="p7">Verbal</p><p class="p15"><b>61</b>/100</p>
             </main>
 <br>
-<main class="m6" ><img class="i5" src="icon-visual.svg" alt="icon-memory"><p class="p8">visual</p><p class="p16">72</p><p class="p17">/100</p>
+<main class="m6" ><img class="i5" src="icon-visual.svg" alt="icon-memory"><p class="p8">visual</p><p class="p17"><b>72</b>/100</p>
 </main>
 <br>
 <br><br>
