@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Results summary component as a frontend montor project">
+    <meta name="description" content="Results summary component as a frontend project">
     <meta name="author" content="RSC">
     <link rel="icon" href="favicon-32x32.png">
     <title>
         Results summary component
     </title>
     <style>
+        .m9{
+            display: flex;
+        }
         body {
             width: 100%;
             height: 100vh;
@@ -22,6 +25,7 @@
             box-sizing: border-box;
         }
         .m1 {
+            display: block;
             border-radius: 8%;
             width: 340px;
             height: 490px;
@@ -30,19 +34,16 @@
             background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
         }
         .m2{
-            White: hsl(0, 0%, 100%);
-            border-radius: 8%;
+
+            color: hsl(0, 0%, 100%);
             width: 340px;
             height: 500px;
-            padding: 50px;
-            padding-right: 25px;
             box-sizing: border-box;
             border-radius: 50%;
-            display: table;
         display: block;
         padding:20px;
         border-radius: 20px;
-        position: relative;
+
         }
         .h1 {
             border-radius: 50%;
@@ -65,10 +66,24 @@
             margin-bottom: 20px;
         }
         @media screen and (max-width: 480px) {
-    .m2 {
-        display: block;
-        margin-top: 20px;
-    }
+.m9{
+    display: flex;
+    flex-direction: column;
+    padding-top:360px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.m2{padding-bottom: 20px;}
+
+
         }
         @font-face {
             font-family: HankenGrotesk-Variable;
@@ -113,9 +128,9 @@
         font-size: 16px;
         font-weight: 400;
         font-style: normal;
-        font-family: "HankenGrotesk-Medium" !important;
 margin-left: 1px;
         text-align: right;
+        font-family: "HankenGrotesk-Variable";
 
         }
         .p6{
@@ -126,9 +141,9 @@ margin-left: 1px;
             font-size: 16px;
             font-weight: 400;
             font-style: normal;
-            font-family: "HankenGrotesk-Variable";
             text-align: left;
             margin-left: 1px;
+            font-family: "HankenGrotesk-Variable";
         }
         .p7{
             margin: auto;
@@ -137,10 +152,9 @@ margin-left: 1px;
             color:  hsl(166, 100%, 37%);
             font-size: 16px;
             font-weight: 400;
-            font-style: normal;
-            font-family: "HankenGrotesk-Medium";
             text-align: left;
             margin-left: 1px;
+            font-family: "HankenGrotesk-Variable";
         }
         .p8{
             margin: auto;
@@ -150,9 +164,9 @@ margin-left: 1px;
             font-size: 16px;
             font-weight: 400;
             font-style: normal;
-            font-family: "HankenGrotesk-Medium"!important;
             text-align: left;
             margin-left: 1px;
+           font-family: "HankenGrotesk-Variable";
         }
         .m3{
             border-radius: 10%;
@@ -160,7 +174,6 @@ margin-left: 1px;
             background-color: hsl(39, 100%, 56%);
             color: white;
             font-size: 20px;
-            font-family: HankenGrotesk-Medium;
             border-radius: 10%;
             background-color: aliceblue;
             width: 70%;
@@ -173,7 +186,6 @@ margin-left: 1px;
             background-color: hsl(39, 100%, 56%);
             color: white;
             font-size: 20px;
-            font-family: HankenGrotesk-Bold;
             border-radius: 10%;
             background-color: aliceblue;
             width: 70%;
@@ -186,7 +198,6 @@ margin-left: 1px;
             background-color: hsl(39, 100%, 56%);
             color: white;
             font-size: 20px;
-            font-family: HankenGrotesk-Bold;
             border-radius: 10%;
             background-color: aliceblue;
             width: 70%;
@@ -199,7 +210,6 @@ margin-left: 1px;
             background-color: hsl(39, 100%, 56%);
             color: white;
             font-size: 20px;
-            font-family: HankenGrotesk-Bold;
             border-radius: 10%;
             background-color: aliceblue;
             width: 70%;
@@ -214,11 +224,9 @@ margin-left: 1px;
             font-size: 12px;
             font-weight: 400;
             font-style: normal;
-            font-family: "HankenGrotesk-Variable";
             text-align: left;
             margin-left: 1px;
             padding-left: 130px;  padding-left:4px;
-            font-family:  HankenGrotesk-Medium;
             padding-left: 140px;
         }  
         .p13{
@@ -229,11 +237,9 @@ margin-left: 1px;
             font-size: 12px;
             font-weight: 400;
             font-style: normal;
-            font-family: "HankenGrotesk-Variable";
             text-align: left;
             margin-left: 1px;
             padding-left: 140px;  padding-left:4px;
-            font-family:  HankenGrotesk-Medium;
             padding-left: 140px;
         }
         .p15{
@@ -244,12 +250,10 @@ margin-left: 1px;
             font-size: 12px;
             font-weight: 400;
             font-style: normal;
-            font-family: "HankenGrotesk-Variable";
             text-align: left;
             margin-left: 1px;
             padding-left: 130px;  padding-left:15px;
-            font-family:  HankenGrotesk-Medium;
-            padding-left: 150px;
+                        padding-left: 150px;
         }
         .p17{
             margin: auto;
@@ -259,45 +263,45 @@ margin-left: 1px;
             font-size: 12px;
             font-weight: 400;
             font-style: normal;
-            font-family: "HankenGrotesk-Variable";
             text-align: left;
             margin-left: 2px;
             padding-left: 130px;  padding-left:15px;
-            font-family:  HankenGrotesk-Medium;
             padding-left: 150px;
+            font-family: HankenGrotesk-Variable;
         }
         button{
             width: 290px;
             height: 40px;
             border-radius: 20px;
-            border-color: hsl(234, 85%, 45%);
-            background-color: hsl(234, 85%, 45%);
+            border-color: hsl(224, 30%, 27%);
+            background-color: hsl(224, 30%, 27%);
             color: white;
             font-size: 18px;
-            font-family:HankenGrotesk-Variable ;
         }
         button:hover{
-            background-color:hsl(252, 100%, 67%);
-        }
+            background-color:hsl(241, 81%, 54%);
+        border-color: hsl(241, 81%, 54%);}
 </style>
 </head>
 <body>
-    <main class="m1">
+    <main class="m9">
+    <div class="m1">
         <center>
-        <p style="color:hsl(241, 100%, 89%);font-family:HankenGrotesk-Variable ;font-size: 110%;"><b>Your Result</b></p>
+        <h1 style="color:hsl(241, 100%, 89%) ;font-size: 110%;font-family:HankenGrotesk-Medium;"><b>Your Result</b></h1>
         <main class="h1">
-            <p style="font-size: 120px";>76</p>&nbsp;
+            <p class="p12" style="font-size:120px";>76</p>&nbsp;
             <p class="p2">of 100</p>
         </main>
-        <p style="color: white;font-family: HankenGrotesk-ExtraBold;font-size: 30px;">Great</p>
-        <p style="font-family: HankenGrotesk-Medium;color: white;line-height: 140%;">you scored higher than 65% of the people who have taken these tests</p>
+            <p style="font-size: 30px;color:white;font-family: HankenGrotesk-ExtraBold;
+            ">Great</p>
+        <p style="color: white;line-height: 140%;font-family:HankenGrotesk-Medium;">you scored higher than 65% of the people who have taken these tests</p>
         </center>
-    </main>
+    </div>
     <main class="m2" >
-            <p style="text-align: left;font-family: HankenGrotesk-Variable;font-size: 24px;"><b>Summary</b></p>
+            <p style="text-align: left;font-size: 24px;color:black"><b>Summary</b></p>
             <br>
             <main class="m3">
-                <img class="i2" src="icon-reaction.svg" alt="icon-reaction"><p class="p0">reaction</p><p class="p11"><b>80</b>/100</p>
+                <img class="i2" src="icon-reaction.svg" alt="icon-reaction"><p class="p0">Reaction</p><p class="p11"><b>80</b>/100</p>
             </main>
 <br>
                 <main class="m4" ><img class="i3" src="icon-memory.svg" alt="icon-memory"><p class="p6">Memory</p><p class="p13"><b>92</b>/100</p>
@@ -306,16 +310,19 @@ margin-left: 1px;
             <main class="m5" ><img class="i4" src="icon-verbal.svg" alt="icon-memory"><p class="p7">Verbal</p><p class="p15"><b>61</b>/100</p>
             </main>
 <br>
-<main class="m6" ><img class="i5" src="icon-visual.svg" alt="icon-memory"><p class="p8">visual</p><p class="p17"><b>72</b>/100</p>
+<main class="m6" ><img class="i5" src="icon-visual.svg" alt="icon-memory"><p class="p8">Visual</p><p class="p17"><b>72</b>/100</p>
 </main>
 <br>
 <br><br>
 <main class="m7">
     <center>
-    <button>Continue</button>
+            <button style="font-family: HankenGrotesk-ExtraBold;">Continue</button>
 </center>
+</main>
 </main>
 
 
+</body>
+</html>
 </body>
 </html>
